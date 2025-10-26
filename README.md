@@ -1,16 +1,53 @@
-# React + Vite
+# 🧿 LegalChain Proof  
+**Your trusted file verification system powered by BlockDAG**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LegalChain Proof is a decentralized web application that enables users to securely upload, hash, register, and verify documents on the **BlockDAG blockchain**.  
+It ensures immutability, transparency, and proof of authenticity for digital files — perfect for legal, academic, and business use cases.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- Upload and hash documents locally  
+- Register documents on-chain using your BlockDAG wallet  
+- Verify document authenticity and ownership  
+- View registration timestamps and signer addresses  
+- Clean, responsive UI built with TailwindCSS  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧠 Tech Stack
+- **Frontend:** React + Vite  
+- **Styling:** TailwindCSS v4  
+- **Blockchain:** Solidity Smart Contract (BlockDAG Testnet)  
+- **Web3:** Ethers.js  
+- **Deployment:** Vercel  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/U-I-DUTSE/Legalchain-proof.git
+   cd legalchain-proof
+2. **Install Dependencies**
+    npm install
+3. **Start the development server**
+    npm run dev
+4. **Connect to BlockDAG Testnet**
+    Add BlockDAG Testnet RPC in your MetaMask
+    Fund your wallet using the BlockDAG Faucet
+    Deploy or connect to the LegalChainProof smart contract
+
+🧾 Example Output
+✅ Document verified!
+Registered by 0xC2596b692125173B357BC0CeA92511ddd2B67d13
+on 10/25/2025, 6:01:52 PM
+
+👨‍💻 Author
+Daggers of Fortune — Built for BlockDAG Hackathon 2025
+📅 Copyright © 2025
+
+🏁 License
+This project is licensed under the MIT License.
+You’re free to use, modify, and distribute it as long as proper credit is given.

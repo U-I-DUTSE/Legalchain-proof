@@ -1,5 +1,5 @@
-# 🧿 LegalChain Proof  
-**Your trusted file verification system powered by BlockDAG**
+# Legalchain-proof
+LegalChain Proof: A decentralized document verification and signing system built on the BlockDAG testnet. Securely register and verify document authenticity using blockchain technology.
 
 LegalChain Proof is a decentralized web application that enables users to securely upload, hash, register, and verify documents on the **BlockDAG blockchain**.  
 It ensures immutability, transparency, and proof of authenticity for digital files — perfect for legal, academic, and business use cases.
@@ -51,3 +51,4 @@ Daggers of Fortune — Built for BlockDAG Hackathon 2025
 🏁 License
 This project is licensed under the MIT License.
 You’re free to use, modify, and distribute it as long as proper credit is given.
+

@@ -1,6 +1,6 @@
 import { ethers } from "ethers"
 
-const CONTRACT_ADDRESS = "0x119abdc42d0094c79f72e18e66ce8b52a6f931ef" // replace this
+const CONTRACT_ADDRESS = "0x119abdc42d0094c79f72e18e66ce8b52a6f931ef" // My Smart Contract Addrees
 const CONTRACT_ABI = [
   {
     "inputs": [

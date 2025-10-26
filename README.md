@@ -39,6 +39,33 @@ It ensures immutability, transparency, and proof of authenticity for digital fil
     Fund your wallet using the BlockDAG Faucet
     Deploy or connect to the LegalChainProof smart contract
 
+🔗 Smart Contract
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract LegalChainProof {
+    struct Document {
+        address signer;
+        uint256 timestamp;
+    }
+
+    mapping(bytes32 => Document) public documents;
+
+    event DocumentRegistered(bytes32 indexed docHash, address indexed signer, uint256 timestamp);
+
+    function registerDocument(bytes32 docHash) public {
+        require(documents[docHash].signer == address(0), "Document already registered");
+        documents[docHash] = Document(msg.sender, block.timestamp);
+        emit DocumentRegistered(docHash, msg.sender, block.timestamp);
+    }
+
+    function verifyDocument(bytes32 docHash) public view returns (address, uint256) {
+        Document memory doc = documents[docHash];
+        require(doc.signer != address(0), "Document not found");
+        return (doc.signer, doc.timestamp);
+    }
+}
+
 🧾 Example Output
 ✅ Document verified!
 Registered by 0xC2596b692125173B357BC0CeA92511ddd2B67d13
